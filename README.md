@@ -1,2 +1,1 @@
-#!/bin/bash
-where am i
+shell_basics, shell_permissions, shell_redirections, shell_variables_expansions
