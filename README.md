@@ -1,9 +1,9 @@
 This repository contains 4 folders:
 
-shell_basics
+-	shell_basics
 
-shell_permissions
+-	shell_permissions
 
-shell_redirections
+-	shell_redirections
 
-shell_variables_expansions
+-	shell_variables_expansions
