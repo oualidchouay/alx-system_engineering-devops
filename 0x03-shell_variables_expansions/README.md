@@ -58,7 +58,7 @@ Requirements
 Tasks
 -----
 
-### 0\. <o>
+### 0\. `<o>`
 
 mandatory
 
