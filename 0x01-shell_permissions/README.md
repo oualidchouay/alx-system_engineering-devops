@@ -36,6 +36,25 @@ Resources
 -	`useradd`
 -	`addgroup`
 
+### Permissions
+
+-	What do the commands `chmod`, `sudo`, `su`, `chown`, `chgrp` do
+-	Linux file permissions
+-	How to represent each of the three sets of permissions (owner, group, and other) as a single digit
+-	How to change permissions, owner and group of a file
+-	Why can’t a normal user `chown` a file
+-	How to run a command with root privileges
+-	How to change user ID or become superuser
+
+### Other Man Pages
+
+-	How to create a user
+-	How to create a group
+-	How to print real and effective user and group IDs
+-	How to print the groups a user is in
+-	How to print the effective userid
+
+
 Requirements
 ------------
 
@@ -50,12 +69,15 @@ Requirements
 -	You are not allowed to use backticks, `&&`, `||` or `;`
 -	All your scripts must be executable
 
+
 Tasks
 -----
 
-### 0\. My name is Betty
 
-mandatory
+**mandatory**
+
+-------------------------------------------------------
+### 0\. My name is Betty
 
 Create a script that switches the current user to the user `betty`.
 
@@ -73,10 +95,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `0-iam_betty`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 1\. Who am I
-
-mandatory
 
 Write a script that prints the effective username of the current user.
 
@@ -91,10 +115,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `1-who_am_i`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 2\. Groups
-
-mandatory
 
 Write a script that prints all the groups the current user is part of.
 
@@ -110,11 +136,12 @@ Note: depending on the user, you will get a different output.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `2-groups`
+-------------------------------------------------------
 
 
+
+-------------------------------------------------------
 ### 3\. New owner
-
-mandatory
 
 Write a script that changes the owner of the file `hello` to the user `betty`.
 
@@ -136,10 +163,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `3-new_owner`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 4\. Empty!
-
-mandatory
 
 Write a script that creates an empty file called `hello`.
 
@@ -148,10 +177,12 @@ Write a script that creates an empty file called `hello`.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `4-empty`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 5\. Execute
-
-mandatory
 
 Write a script that adds execute permission to the owner of the file `hello`.
 
@@ -177,10 +208,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `5-execute`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 6\. Multiple permissions
-
-mandatory
 
 Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file `hello`.
 
@@ -204,11 +237,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `6-multiple_permissions`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 7\. Everybody!
-
-
-mandatory
 
 Write a script that adds execution permission to the owner, the group owner and the other users, to the file `hello`
 
@@ -233,10 +267,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `7-everybody`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 8\. James Bond
-
-mandatory
 
 Write a script that sets the permission to the file `hello` as follows:
 
@@ -264,10 +300,13 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `8-James_Bond`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 9\. John Doe
-
-mandatory
 
 Write a script that sets the mode of the file `hello` to this:
 
@@ -283,10 +322,12 @@ Write a script that sets the mode of the file `hello` to this:
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `9-John_Doe`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 10\. Look in the mirror
-
-mandatory
 
 Write a script that sets the mode of the file `hello` the same as `olleh`’s mode.
 
@@ -315,10 +356,13 @@ Note: the mode of `olleh` will not always be 664. Make sure your script works fo
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `10-mirror_permissions`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 11\. Directories
-
-mandatory
 
 Create a script that adds execute permission to all subdirectories of the **current directory** for the owner, the group owner and all other users.
 
@@ -348,10 +392,13 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `11-directories_permissions`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 12\. More directories
-
-mandatory
 
 Create a script that creates a directory called `my_dir` with permissions 751 in the working directory.
 
@@ -382,10 +429,13 @@ Note that depending on the file, the output of your script will be different.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `12-directory_permissions`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 13\. Change group
-
-mandatory
 
 Write a script that changes the group owner to `school` for the file `hello`
 
@@ -417,10 +467,14 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `13-change_group`
+-------------------------------------------------------
 
+
+**advanced**
+
+
+-------------------------------------------------------
 ### 14\. Owner and group
-
-advanced
 
 Write a script that changes the owner to `vincent` and the group owner to `staff` for all the files and directories in the working directory.
 
@@ -450,10 +504,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `100-change_owner_and_group`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 15\.  Symbolic links
-
-advanced
 
 Write a script that changes the owner and the group owner of `_hello` to `vincent` and `staff` respectively.
 
@@ -480,9 +536,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `101-symbolic_link_permissions`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 16\. If only
-advanced
 
 Write a script that changes the owner of the file `hello` to `betty` only if it is owned by the user `guillaume`.
 
@@ -506,11 +565,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `102-if_only`
+-------------------------------------------------------
 
 
+
+-------------------------------------------------------
 ### 17\. Star Wars
-
-advanced
 
 Write a script that will play the StarWars IV episode in the terminal.
 
@@ -519,3 +579,4 @@ Write a script that will play the StarWars IV episode in the terminal.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x01-shell_permissions`
 -	File: `103-Star_Wars`
+-------------------------------------------------------
