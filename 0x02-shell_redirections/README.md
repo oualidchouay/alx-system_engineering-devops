@@ -90,7 +90,6 @@ Note: You do not have to learn about `fmt`, `pr`, `du`, `gzip`, `tar`, `lpr`, `s
 Tasks
 -----
 
-
 **mandatory**
 
 ------------------------------------------------------
