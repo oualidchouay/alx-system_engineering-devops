@@ -40,6 +40,29 @@ Resources
 -	`cut`
 -	`passwd (5)` (i.e. `man 5 passwd`)
 
+### Shell, I/O Redirection
+
+-	What do the commands `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`, `tr` do
+-	How to redirect standard output to a file
+-	How to get standard input from a file instead of the keyboard
+-	How to send the output from one program to the input of another program
+-	How to combine commands and filters with redirections
+
+### Special Characters
+
+-	What are special characters
+-	Understand what do the white spaces, single quotes, double quotes, backslash, comment, pipe, command separator, tilde and how and when to use them
+
+### Other Man Pages
+
+-	How to display a line of text
+-	How to concatenate files and print on the standard output
+-	How to reverse a string
+-	How to remove sections from each line of files
+-	What is the `/etc/passwd` file and what is its format
+-	What is the `/etc/shadow` file and what is its format
+
+
 Requirements
 ------------
 
@@ -55,6 +78,7 @@ Requirements
 -	All your scripts must be executable
 -	You are not allowed to use `sed` or `awk`
 
+
 More Info
 ----------
 
@@ -62,12 +86,15 @@ Read your `/etc/passwd` and `/etc/shadow` files.
 
 Note: You do not have to learn about `fmt`, `pr`, `du`, `gzip`, `tar`, `lpr`, `sed` and `awk` yet.
 
+
 Tasks
 -----
 
-### 0\. Hello World
 
-mandatory
+**mandatory**
+
+------------------------------------------------------
+### 0\. Hello World
 
 Write a script that prints “Hello, World”, followed by a new line to the standard output.
 
@@ -85,10 +112,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `0-hello_world`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 1\. Confused smiley
-
-mandatory
 
 Write a script that displays a confused smiley `"(Ôo)'`.
 
@@ -103,10 +132,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `1-confused_smiley`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 2\. Let's display a file
-
-mandatory
 
 Display the content of the `/etc/passwd` file.
 
@@ -146,11 +177,12 @@ Note: depending on the user, you will get a different output.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `2-hellofile`
+------------------------------------------------------
 
 
+
+------------------------------------------------------
 ### 3\. What about 2?
-
-mandatory
 
 Display the content of `/etc/passwd` and `/etc/hosts`
 
@@ -174,10 +206,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `3-twofiles`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 4\. Last lines of a file
-
-mandatory
 
 Display the last 10 lines of `/etc/passwd`
 
@@ -202,10 +236,13 @@ _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `4-lastlines`
+------------------------------------------------------
 
+
+
+
+------------------------------------------------------
 ### 5\. I'd prefer the first ones actually
-
-mandatory
 
 Display the first 10 lines of `/etc/passwd`
 
@@ -231,10 +268,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `5-firstlines`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 6\. Line #2
-
-mandatory
 
 Write a script that displays the third line of the file `iacta`.
 
@@ -270,11 +309,12 @@ Note: The output will differ, depending on the content of the file `iacta`.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `6-third_line`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 7\. It is a good file that cuts iron without making a noise
-
-
-mandatory
 
 Write a shell script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line.
 
@@ -296,10 +336,12 @@ julien@ubuntu:~/shell$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `7-file`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 8\. Save current state of directory
-
-mandatory
 
 Write a script that writes into the file `ls_cwd_content` the result of the command `ls -la`. If the file `ls_cwd_content` already exists, it should be overwritten. If the file `ls_cwd_content` does not exist, create it.
 
@@ -336,10 +378,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `8-cwd_state`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 9\. Duplicate last line
-
-mandatory
 
 Write a script that duplicates the last line of the file `iacta`
 
@@ -386,10 +430,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `9-duplicate_last_line`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 10\. No more javascript
-
-mandatory
 
 Write a script that deletes all the regular files (not the directories) with a `.js` extension that are present in the current directory and all its subfolders.
 
@@ -435,10 +481,13 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `10-no_more_js`
+------------------------------------------------------
 
+
+
+
+------------------------------------------------------
 ### 11\. Don't just count your directories, make your directories count
-
-mandatory
 
 Write a script that counts the number of directories and sub-directories in the current directory.
 
@@ -492,10 +541,13 @@ julien@production-503e7013:~/shell/fun_with_the_shell$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `11-directories`
+------------------------------------------------------
 
+
+
+
+------------------------------------------------------
 ### 12\. What’s new
-
-mandatory
 
 Create a script that displays the 10 newest files in the current directory.
 
@@ -540,10 +592,12 @@ alex@ubuntu:/tmp$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `12-newest_files`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 13\. Being unique is better than being perfect
-
-mandatory
 
 Create a script that takes a list of words as input and prints only words that appear exactly once.
 
@@ -591,10 +645,12 @@ julien@ubuntu:/tmp/0x02$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `13-unique`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 14\. It must be in that file
-
-mandatory
 
 Display lines containing the pattern “root” from the file `/etc/passwd`
 
@@ -611,10 +667,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `14-findthatword`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 15\.  Count that word
-
-mandatory
 
 Display the number of lines that contain the pattern “bin” in the file `/etc/passwd`
 
@@ -629,9 +687,13 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `15-countthatword`
+------------------------------------------------------
+
+
+
+
 
 ### 16\. What's next?
-mandatory
 
 Display lines containing the pattern “root” and 3 lines after them in the file `/etc/passwd`.
 
@@ -655,11 +717,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `16-whatsnext`
+------------------------------------------------------
 
 
+
+------------------------------------------------------
 ### 17\. I hate bins
-
-mandatory
 
 Display all the lines in the file `/etc/passwd` that do not contain the pattern “bin”.
 
@@ -683,10 +746,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `17-hidethisword`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 18\. Letters only please
-
-mandatory
 
 Display all lines of the file `/etc/ssh/sshd_config` starting with a letter.
 
@@ -707,10 +772,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `18-letteronly`
+------------------------------------------------------
 
+
+
+------------------------------------------------------
 ### 19\. A to Z
-
-mandatory
 
 Replace all characters `A` and `c` from input to `Z` and `e` respectively.
 
@@ -725,10 +792,13 @@ julien@ubuntu:/tmp/0x02$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `19-AZ`
+------------------------------------------------------
+
+
+
+
 
 ### 20\. Without C, you would live in hiago
-
-mandatory
 
 Create a script that removes all letters `c` and `C` from input.
 
@@ -743,10 +813,13 @@ julien@ubuntu:/tmp/0x02$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `20-hiago`
+------------------------------------------------------
 
+
+
+
+------------------------------------------------------
 ### 21\. esreveR
-
-mandatory
 
 Write a script that reverse its input.
 
@@ -761,10 +834,13 @@ julien@ubuntu:/tmp/0x02$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `21-reverse`
+------------------------------------------------------
 
+
+
+
+------------------------------------------------------
 ### 22\. DJ Cut Killer
-
-mandatory
 
 Write a script that displays all users and their home directories, sorted by users.
 
@@ -866,10 +942,15 @@ julien@ubuntu:/tmp/0x02$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `22-users_and_homes`
+------------------------------------------------------
 
+
+**advanced**
+
+
+------------------------------------------------------
 ### 23\. Empty casks make the most noise
 
-advanced
 
 Write a command that finds all empty files and directories in the current directory and all sub-directories.
 
@@ -960,11 +1041,13 @@ ubuntu@ip-172-31-63-244:~/0x02-shell_redirections$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `100-empty_casks`
+------------------------------------------------------
 
 
+
+
+------------------------------------------------------
 ### 24\. A gif is worth ten thousand words
-
-adavanced
 
 Write a script that lists all the files with a `.gif` extension in the current directory and all its sub-directories.
 
@@ -1026,11 +1109,13 @@ Write a script that lists all the files with a `.gif` extension in the current d
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `101-gifs`
+------------------------------------------------------
 
 
+
+
+------------------------------------------------------
 ### 25\. Acrostic
-
-advanced
 
 An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval. [Read more](https://intranet.alxswe.com/rltoken/I2jXYKQIpVouDo0_1XrCJw "Read more").
 
@@ -1060,10 +1145,13 @@ julien@ubuntu:/tmp/0x02$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `102-acrostic`
+------------------------------------------------------
 
+
+
+
+------------------------------------------------------
 ### 26\. The biggest fan
-
-advanced
 
 Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 
@@ -1128,3 +1216,5 @@ julien@ubuntu:/tmp/0x02$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x02-shell_redirections`
 -	File: `103-the_biggest_fan`
+------------------------------------------------------
+
