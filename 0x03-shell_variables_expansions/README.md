@@ -39,6 +39,56 @@ Resources
 -	`source`
 -	`printf`
 
+### Learning Objectives
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/d8LWxAXk9_gsvpPw3ICdwQ "explain to anyone"), **without the help of Google:**
+
+General
+-------
+
+-	What happens when you type `$ ls -l *.txt`
+
+Shell Initialization Files
+--------------------------
+
+-	What are the `/etc/profile` file and the `/etc/profile.d` directory
+-	What is the `~/.bashrc` file
+
+Variables
+---------
+
+-	What is the difference between a local and a global variable
+-	What is a reserved variable
+-	How to create, update and delete shell variables
+-	What are the roles of the following reserved variables: HOME, PATH, PS1
+-	What are special parameters
+-	What is the special parameter `$?`?
+
+Expansions
+----------
+
+-	What is expansion and how to use them
+-	What is the difference between single and double quotes and how to use them properly
+-	How to do command substitution with `$()` and backticks
+
+Shell Arithmetic
+----------------
+
+-	How to perform arithmetic operations with the shell
+
+The `alias` Command
+-----------------
+
+-	How to create an alias
+-	How to list aliases
+-	How to temporarily disable an alias
+
+Other `help` pages
+------------------
+
+-	How to execute commands from a file in the current shell
+
+
 Requirements
 ------------
 
@@ -55,12 +105,23 @@ Requirements
 -	All your scripts must be executable
 
 
+More Info
+----------
+
+Read your `/etc/profile`, `/etc/inputrc` and `~/.bashrc` files.
+
+Look at some files in the `/etc/profile.d` directory.
+
+Note: You do not have to learn about `awk`, `tar`, `bzip2`, `date`, `scp`, `ulimit`, `umask`, or shell scripting, yet.
+
+
 Tasks
 -----
 
-### 0\. `<o>`
+**mandatory**
 
-mandatory
+-------------------------------------------------------
+### 0\. `<o>`
 
 Create a script that creates an alias.
 
@@ -82,10 +143,12 @@ julien@ubuntu:/tmp/0x03$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `0-alias`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 1\. Hello you
-
-mandatory
 
 Create a script that prints `hello user`, where user is the current Linux user.
 
@@ -102,10 +165,12 @@ julien@ubuntu:/tmp/0x03$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `1-hello_you`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 2\. The path to success is to take massive, determined action
-
-mandatory
 
 Add `/action` to the `PATH`. `/action` should be the last directory the shell looks into when looking for a program.
 
@@ -123,11 +188,13 @@ julien@ubuntu:/tmp/0x03$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `2-path`
+-------------------------------------------------------
 
 
+
+
+-------------------------------------------------------
 ### 3\. What about 2?
-
-mandatory
 
 Create a script that counts the number of directories in the `PATH`.
 
@@ -147,10 +214,12 @@ julien@ubuntu:/tmp/0x03$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `3-paths`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 4\. Global variables
-
-mandatory
 
 Create a script that lists environment variables.
 
@@ -200,10 +269,12 @@ julien@ubuntu:/tmp/0x03$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `4-global_variables`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 5\. Local variables
-
-mandatory
 
 Create a script that lists all local variables and environment variables, and functions.
 
@@ -237,10 +308,13 @@ julien@ubuntu:/tmp/0x03$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `5-local_variables`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 6\. Local variable
-
-mandatory
 
 Create a script that creates a new local variable.
 
@@ -252,11 +326,13 @@ Create a script that creates a new local variable.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `6-create_local_variable`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 7\. Global variable
-
-
-mandatory
 
 Create a script that creates a new global variable.
 
@@ -268,10 +344,13 @@ Create a script that creates a new global variable.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `7-create_global_variable`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 8\. Every addition to true knowledge is an addition to human power
-
-mandatory
 
 Write a script that prints the result of the addition of 128 with the value stored in the environment variable `TRUEKNOWLEDGE`, followed by a new line.
 
@@ -287,10 +366,12 @@ julien@production-503e7013:~$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `8-true_knowledge`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 9\. Divide and rule
-
-mandatory
 
 Write a script that prints the result of `POWER` divided by `DIVIDE`, followed by a new line.
 
@@ -309,10 +390,12 @@ julien@production-503e7013:~$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `9-divide_and_rule`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 10\. Love is anterior to life, posterior to death, initial of creation, and the exponent of breath
-
-mandatory
 
 Write a script that displays the result of `BREATH` to the power `LOVE`
 
@@ -332,10 +415,12 @@ julien@production-503e7013:~/$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `10-love_exponent_breath`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 11\. There are 10 types of people in the world -- Those who understand binary, and those who don't
-
-mandatory
 
 Write a script that converts a number from base 2 to base 10.
 
@@ -354,10 +439,12 @@ julien@production-503e7013:~/$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `11-binary_to_decimal`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 12\. What’s new
-
-mandatory
 
 Create a script that prints all possible combinations of two letters, except oo.
 
@@ -392,10 +479,13 @@ julien@ubuntu:/tmp/0x03$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `12-combinations`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 13\. Floats
-
-mandatory
 
 Write a script that prints a number with two decimal places, followed by a new line.
 
@@ -419,10 +509,14 @@ ubuntu@ip-172-31-63-244:~/0x03$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `13-print_float`
+-------------------------------------------------------
 
+
+**advanced**
+
+
+-------------------------------------------------------
 ### 14\. Decimal to Hexadecimal
-
-advanced
 
 Write a script that converts a number from base 10 to base 16.
 
@@ -447,10 +541,12 @@ julien@production-503e7013:~/$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `100-decimal_to_hexadecimal`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 15\. Everyone is a proponent of strong encryption
-
-advanced
 
 Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
 
@@ -469,9 +565,13 @@ julien@production-503e7013:~/shell/fun_with_the_shell$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `101-rot13`
+-------------------------------------------------------
 
+
+
+
+-------------------------------------------------------
 ### 16\. The eggs of the brood need to be an odd number
-advanced
 
 Write a script that prints every other line from the input, starting with the first line.
 
@@ -528,11 +628,13 @@ ubuntu@ip-172-31-63-244:/$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `102-odd`
+-------------------------------------------------------
 
 
+
+
+-------------------------------------------------------
 ### 17\. I'm an instant star. Just add water and stir.
-
-advanced
 
 Write a shell script that adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result.
 
@@ -553,3 +655,4 @@ julien@production-503e7013:~$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x03-shell_variables_expansions`
 -	File: `103-water_and_stir`
+-------------------------------------------------------
