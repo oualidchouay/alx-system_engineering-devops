@@ -1,5 +1,5 @@
 0x00. Shell, basics
-================
+===================
 
 -   By Julien Barbier, co-founder & CEO
 
@@ -16,6 +16,7 @@ Concepts
 
 ![image](https://github.com/oualidchouay/alx-system_engineering-devops/assets/135179972/128aa440-73ec-4e66-a14f-f6b756aa9ada)
 
+
 Resources
 ---------
 
@@ -31,6 +32,7 @@ Resources
 -	[Keyboard shortcuts for Bash](https://intranet.alxswe.com/rltoken/AGxMxuS5IeW8VmEvJyhwvw "Keyboard shortcuts for Bash")
 -	[LTS](https://wiki.ubuntu.com/LTS "LTS")
 -	[Shebang](https://intranet.alxswe.com/rltoken/cE8ZA3kgEaFhB-IDNv31bQ "Shebang")
+
 
 **man or help:**
 
@@ -49,6 +51,76 @@ Resources
 -	`help`
 -	`man`
 
+
+Learning Objectives
+-------------------
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/02rKNnoj4VMlA7BHYppIQg "explain to anyone"), without the help of Google:
+
+### General
+
+-	What does RTFM mean?
+-	What is a Shebang
+
+### What is the Shell
+
+-	What is the shell
+-	What is the difference between a terminal and a shell
+-	What is the shell prompt
+-	How to use the history (the basics)
+
+### Navigation
+
+-	What do the commands or built-ins `cd`, `pwd`, `ls` do
+-	How to navigate the filesystem
+-	What are the . and .. directories
+-	What is the working directory, how to print it and how to change it
+-	What is the root directory
+-	What is the home directory, and how to go there
+-	What is the difference between the root directory and the home directory of the user root
+-	What are the characteristics of hidden files and how to list them
+-	What does the command `cd -` do
+
+### Looking Around
+
+-	What do the commands `ls`, `less`, `file` do
+-	How do you use options and arguments with commands
+-	Understand the ls long format and how to display it
+-	[A Guided Tour](https://intranet.alxswe.com/rltoken/HUhQ73fFR1GOC5nb4r-mDw "A Guide Tour")
+-	What does the ln command do
+-	What do you find in the most common/important directories
+-	What is a symbolic link
+-	What is a hard link
+-	What is the difference between a hard link and a symbolic link
+
+### Manipulating Files
+
+-	What do the commands `cp`, `mv`, `rm`, `mkdir` do
+-	What are wildcards and how do they work
+-	How to use wildcards
+
+### Working with Commands
+
+-	What do `type`, `which`, `help`, `man` commands do
+-	What are the different kinds of commands
+-	What is an alias
+-	When do you use the command help instead of man
+
+### Reading Man Pages
+
+-	How to read a man page
+-	What are man page sections
+-	What are the section numbers for User commands, System calls and Library functions
+
+### Keyboard Shortcuts for Bash
+
+-	Common shortcuts for Bash
+
+### LTS
+
+-	What does `LTS` mean?
+
+
 Requirements
 ------------
 
@@ -63,6 +135,7 @@ Requirements
 -	A `README.md` file, at the root of the folder of this project, describing what each script is doing
 -	You are not allowed to use backticks, `&&`, `||` or `;`
 -	All your scripts must be executable. To make your file executable, use the `chmod` command: `chmod u+x file`. Later, we’ll learn more about how to utilize this command.
+
 
 More Info
 ----------
@@ -108,9 +181,10 @@ julien@ubuntu:/tmp$
 Tasks
 -----
 
-### 0\. Where am I?
+**mandatory**
 
-mandatory
+-------------------------------------------------------
+### 0\. Where am I?
 
 Write a script that prints the absolute path name of the current working directory.
 
@@ -127,10 +201,11 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `0-current_working_directory`
+-------------------------------------------------------
 
+
+-------------------------------------------------------
 ### 1\. What’s in there?
-
-mandatory
 
 Display the contents list of your current directory.
 
@@ -148,10 +223,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `1-listit`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 2\. There is no place like home
-
-mandatory
 
 Write a script that changes the working directory to the user’s home directory.
 
@@ -173,11 +250,12 @@ julien@ubuntu:~$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `2-bring_me_home`
+-------------------------------------------------------
 
 
+
+-------------------------------------------------------
 ### 3\. The long format
-
-mandatory
 
 Display current directory contents in a long format
 
@@ -198,10 +276,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `3-listfiles`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 4\. Hidden files
-
-mandatory
 
 Display current directory contents, including hidden files (starting with `.`). Use the long format.
 
@@ -225,10 +305,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `4-listmorefiles`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 5\. I love numbers
-
-mandatory
 
 Display current directory contents.
 
@@ -257,10 +339,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `5-listfilesdigitonly`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 6\. Welcome
-
-mandatory
 
 Create a script that creates a directory named `my_first_directory` in the `/tmp/` directory.
 
@@ -278,11 +362,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `6-firstdirectory`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 7\. Betty in my first directory
-
-
-mandatory
 
 Move the file `betty` from `/tmp/` to `/tmp/my_first_directory`.
 
@@ -300,10 +385,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `7-movethatfile`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 8\. Bye bye Betty
-
-mandatory
 
 Delete the file `betty`.
 
@@ -322,10 +409,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `8-firstdelete`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 9\. Bye bye My first directory
-
-mandatory
 
 Delete the directory `my_first_directory` that is in the `/tmp` directory.
 
@@ -343,10 +432,12 @@ $
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `9-firstdirdeletion`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 10\. Back to the future
-
-mandatory
 
 Write a script that changes the working directory to the previous one.
 
@@ -367,10 +458,12 @@ julien@ubuntu:/tmp$ pwd
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `10-back`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 11\. Lists
-
-mandatory
 
 Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the `/boot` directory (in this order), in long format.
 
@@ -380,10 +473,12 @@ Write a script that lists all files (even ones with names beginning with a perio
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `11-lists`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 12\. File type
-
-mandatory
 
 Write a script that prints the type of the file named `iamafile`. The file `iamafile` will be in the `/tmp` directory when we will run your script.
 
@@ -401,10 +496,12 @@ Note that depending on the file, the output of your script will be different.
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `12-file_type`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 13\. We are symbols, and inhabit symbols
-
-mandatory
 
 Create a symbolic link to `/bin/ls`, named `__ls__`. The symbolic link should be created in the current working directory.
 
@@ -426,10 +523,12 @@ lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `13-symbolic_link`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 14\. Copy HTML files
-
-mandatory
 
 Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
 
@@ -440,10 +539,13 @@ You can consider that all HTML files have the extension `.html`
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `14-copy_html`
+-------------------------------------------------------
 
+
+**advanced**
+
+-------------------------------------------------------
 ### 15\. Let’s move
-
-advanced
 
 Create a script that moves all files beginning with an uppercase letter to the directory `/tmp/u`.
 
@@ -482,9 +584,12 @@ drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `100-lets_move`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 16\. Clean Emacs
-advanced
 
 Create a script that deletes all files in the current working directory that end with the character `~`.
 
@@ -503,11 +608,12 @@ ubuntu@ip-172-31-63-244:/tmp/emacs$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `101-clean_emacs`
+-------------------------------------------------------
 
 
+
+-------------------------------------------------------
 ### 17\. Tree
-
-advanced
 
 Create a script that creates the directories `welcome/`, `welcome/to/` and `welcome/to/school` in the current directory.
 
@@ -539,10 +645,12 @@ julien@ubuntu:/tmp/h$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `102-tree`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 18. Life is a series of commas, not periods
-
-advanced
 
 Write a command that lists all the files and directories of the current directory, separated by commas (`,`).
 
@@ -570,10 +678,12 @@ ubuntu@ubuntu:~/$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `103-commas`
+-------------------------------------------------------
 
+
+
+-------------------------------------------------------
 ### 19\. File type: School
-
-advanced
 
 Create a magic file `school.mgc` that can be used with the command `file` to detect `School` data files. `School` data files always contain the string `SCHOOL` at offset 0.
 
@@ -605,4 +715,4 @@ ubuntu@ip-172-31-63-244:/tmp/magic$
 -	GitHub repository: `alx-system_engineering-devops`
 -	Directory: `0x00-shell_basics`
 -	File: `school.mgc`
-
+-------------------------------------------------------
