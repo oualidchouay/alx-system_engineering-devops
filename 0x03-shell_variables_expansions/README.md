@@ -1,7 +1,8 @@
 0x03. Shell, init files, variables and expansions
 ================
 
--   By Julien Barbier, co-founder & CEO
+
+
 
 ### About `Bash` projects
 
