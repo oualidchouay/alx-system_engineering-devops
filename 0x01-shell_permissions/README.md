@@ -1,7 +1,7 @@
 0x01-shell_permissions
 ================
 
--   By Julien Barbier, co-founder & CEO
+
 
 ### About `Bash` projects
 
