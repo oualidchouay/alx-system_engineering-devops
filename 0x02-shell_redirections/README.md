@@ -1,7 +1,8 @@
 0x02. Shell, I/O Redirections and filters
 ================
 
--   By Julien Barbier, co-founder & CEO
+
+
 
 ### About `Bash` projects
 
