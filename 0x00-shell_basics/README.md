@@ -1,7 +1,8 @@
 0x00. Shell, basics
 ===================
 
--   By Julien Barbier, co-founder & CEO
+
+
 
 ### About `Bash` projects
 
