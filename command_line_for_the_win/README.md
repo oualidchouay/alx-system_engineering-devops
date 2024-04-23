@@ -1,7 +1,8 @@
 Command line for the win
 ========================
 
--   Weight: 1
+
+
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/324/06AChAO.png)
 
