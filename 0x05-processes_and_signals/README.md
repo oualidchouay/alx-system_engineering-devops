@@ -71,7 +71,7 @@ Tasks
 
 **mandatory**
 
-
+-------------------------------------------------------
 ### 0\. What is my PID
 
 Write a Bash script that displays its own PID.
@@ -88,9 +88,11 @@ sylvain@ubuntu$
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `0-what-is-my-pid`
+-------------------------------------------------------
 
 
 
+-------------------------------------------------------
 ### 1\. List your processes
 
 Write a Bash script that displays a list of currently running processes.
@@ -162,9 +164,11 @@ sylvain@ubuntu$
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `1-list_your_processes`
+-------------------------------------------------------
 
 
 
+-------------------------------------------------------
 ### 2\. Show your Bash PID
 
 Using your previous exercise command, write a Bash script that displays lines containing the `bash` word, thus allowing you to easily get the PID of your Bash process.
@@ -190,9 +194,11 @@ Here we can see that my Bash PID is `4404`.
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `2-show_your_bash_pid`
+-------------------------------------------------------
 
 
 
+-------------------------------------------------------
 ### 3\. Show your Bash PID made easy
 
 Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word `bash`.
@@ -222,9 +228,12 @@ Here we can see that:
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `3-show_your_bash_pid_made_easy`
+-------------------------------------------------------
 
 
 
+
+-------------------------------------------------------
 ### 4\. To infinity and beyond
 
 Write a Bash script that displays `To infinity and beyond` indefinitely.
@@ -252,9 +261,12 @@ Note that I `ctrl+c` (killed) the Bash script in the example.
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `4-to_infinity_and_beyond`
-
+-------------------------------------------------------
  
 
+
+
+-------------------------------------------------------
 ### 5\. Don't stop me now!
 
 We stopped our `4-to_infinity_and_beyond` process using `ctrl+c` in the previous task, there is actually another way to do this.
@@ -303,9 +315,12 @@ I opened 2 terminals in this example, started by running my `4-to_infinity_and_
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `5-dont_stop_me_now`
+-------------------------------------------------------
 
 
 
+
+-------------------------------------------------------
 ### 6\. Stop me if you can
 
 Write a Bash script that stops `4-to_infinity_and_beyond` process.
@@ -349,10 +364,11 @@ I opened 2 terminals in this example, started by running my `4-to_infinity_and_
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `6-stop_me_if_you_can`
+-------------------------------------------------------
 
 
 
-
+-------------------------------------------------------
 ### 7\. Highlander
 
 Write a Bash script that displays:
@@ -399,9 +415,11 @@ I started `7-highlander` in Terminal #0 and then run `67-stop_me_if_you_can`�
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `7-highlander`
-
+-------------------------------------------------------
  
 
+
+-------------------------------------------------------
 ### 8\. Beheaded process
 
 Write a Bash script that kills the process `7-highlander`.
@@ -434,8 +452,12 @@ I started `7-highlander` in Terminal #0 and then run `8-beheaded_process` in
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `8-beheaded_process`
+-------------------------------------------------------
 
 
+
+
+-------------------------------------------------------
 ### 9\. Process and PID file
 
 Write a Bash script that:
@@ -447,7 +469,7 @@ Write a Bash script that:
 -	Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a SIGQUIT or SIGTERM signal
 
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/d8ecfe9109334898b9540ffd20cf64d1c06f0c09.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T125317Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ba5bb3e380cf847d6b5ae905c1e7d53db8fd96334205dcca4905e606583bbd6e)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/d8ecfe9109334898b9540ffd20cf64d1c06f0c09.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T135915Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9a9c7f8190a491b004ea505a57615b848b4d131ae144371503122aaed2437556)
 
 
 ```
@@ -495,12 +517,15 @@ Starting `100-process_and_pid_file` in the terminal #0 and then killing it in th
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `100-process_and_pid_file`
+-------------------------------------------------------
 
 
+
+-------------------------------------------------------
 ### 10\. Manage my process
 
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/37975393ead381f4d27f268f7337c6d3013b4991.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T125317Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=188c972aa4b1250e1fc434075f2123a5138b455d706759000c170146660f3089)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/37975393ead381f4d27f268f7337c6d3013b4991.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T135915Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4b58b85a7140621e77688e3eb69eea9fe5f3c029ece900b6d91099350e7bf47f)
 
 
 Read:
@@ -580,8 +605,12 @@ sylvain@ubuntu$
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `101-manage_my_process, manage_my_process`
+-------------------------------------------------------
 
 
+
+
+-------------------------------------------------------
 ### 11\. Zombie
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/255/C6mO7b3.jpg)
