@@ -1,13 +1,9 @@
 0x05. Processes and signals
 ===========================
 
--   By Sylvain Kalache
--   Weight: 1
--   Ongoing project - started 01-14-2022, must end by 01-15-2022 (in about 11 hours) - you're done with 0% of tasks.
--   Checker was released at 01-14-2022 12:00 PM
--   QA review fully automated.
 
-About Bash projects
+
+About `Bash` projects
 -------------------
 
 Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.
@@ -20,6 +16,7 @@ Resources
 -   [Linux PID](https://alx-intranet.hbtn.io/rltoken/zh33PXDR6w_qyu7zXUezmw "Linux PID")
 -   [Linux process](https://alx-intranet.hbtn.io/rltoken/px2TdWSjVO8i9SB5gHchAw "Linux process")
 -   [Linux signal](https://alx-intranet.hbtn.io/rltoken/0NIee0VXMrEp36CFR85GIA "Linux signal")
+-	[Process management in linux](https://intranet.alxswe.com/rltoken/XlYrlghzNZ6Z1cbI_IPaiA "Process management in linux")
 
 **man or help**:
 
@@ -35,6 +32,7 @@ Learning Objectives
 
 At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/_zeQBWHdlNNOM-5IqFDhSQ "explain to anyone"), **without the help of Google**:
 
+
 ### General
 
 -   What is a PID
@@ -43,6 +41,7 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   How to kill a process
 -   What is a signal
 -   What are the 2 signals that cannot be ignored
+
 
 Requirements
 ------------
@@ -58,17 +57,22 @@ Requirements
 -   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 -   The second line of all your Bash scripts should be a comment explaining what is the script doing
 
+
 More Info
 ---------
 
 For those who want to know more and learn about all signals, check out [this article](https://alx-intranet.hbtn.io/rltoken/BOU-KVNMqfKEIBo_VOI26A "this article").
 
+
+
 Tasks
 -----
 
-### 0\. What is my PID
 
-mandatory
+**mandatory**
+
+
+### 0\. What is my PID
 
 Write a Bash script that displays its own PID.
 
@@ -85,11 +89,9 @@ sylvain@ubuntu$
 -   Directory: `0x05-processes_and_signals`
 -   File: `0-what-is-my-pid`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 1\. List your processes
-
-mandatory
 
 Write a Bash script that displays a list of currently running processes.
 
@@ -161,11 +163,9 @@ sylvain@ubuntu$
 -   Directory: `0x05-processes_and_signals`
 -   File: `1-list_your_processes`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 2\. Show your Bash PID
-
-mandatory
 
 Using your previous exercise command, write a Bash script that displays lines containing the `bash` word, thus allowing you to easily get the PID of your Bash process.
 
@@ -191,11 +191,9 @@ Here we can see that my Bash PID is `4404`.
 -   Directory: `0x05-processes_and_signals`
 -   File: `2-show_your_bash_pid`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 3\. Show your Bash PID made easy
-
-mandatory
 
 Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word `bash`.
 
@@ -225,11 +223,9 @@ Here we can see that:
 -   Directory: `0x05-processes_and_signals`
 -   File: `3-show_your_bash_pid_made_easy`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 4\. To infinity and beyond
-
-mandatory
 
 Write a Bash script that displays `To infinity and beyond` indefinitely.
 
@@ -257,11 +253,9 @@ Note that I `ctrl+c` (killed) the Bash script in the example.
 -   Directory: `0x05-processes_and_signals`
 -   File: `4-to_infinity_and_beyond`
 
- Done? Help Check your code Get a sandbox
+ 
 
 ### 5\. Don't stop me now!
-
-mandatory
 
 We stopped our `4-to_infinity_and_beyond` process using `ctrl+c` in the previous task, there is actually another way to do this.
 
@@ -310,17 +304,15 @@ I opened 2 terminals in this example, started by running my `4-to_infinity_and_
 -   Directory: `0x05-processes_and_signals`
 -   File: `5-dont_stop_me_now`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 6\. Stop me if you can
-
-mandatory
 
 Write a Bash script that stops `4-to_infinity_and_beyond` process.
 
 Requirements:
 
--   You cannot use `kill` or `killall`
+-   You can not use `kill` or `killall`
 
 Terminal #0
 
@@ -358,11 +350,10 @@ I opened 2 terminals in this example, started by running my `4-to_infinity_and_
 -   Directory: `0x05-processes_and_signals`
 -   File: `6-stop_me_if_you_can`
 
- Done? Help Check your code Get a sandbox
+
+
 
 ### 7\. Highlander
-
-mandatory
 
 Write a Bash script that displays:
 
@@ -409,11 +400,9 @@ I started `7-highlander` in Terminal #0 and then run `67-stop_me_if_you_can`�
 -   Directory: `0x05-processes_and_signals`
 -   File: `7-highlander`
 
- Done? Help Check your code Get a sandbox
+ 
 
 ### 8\. Beheaded process
-
-mandatory
 
 Write a Bash script that kills the process `7-highlander`.
 
@@ -445,3 +434,216 @@ I started `7-highlander` in Terminal #0 and then run `8-beheaded_process` in
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x05-processes_and_signals`
 -   File: `8-beheaded_process`
+
+
+### 9\. Process and PID file
+
+Write a Bash script that:
+
+-	Creates the file `/var/run/myscript.pid` containing its PID
+-	Displays `To infinity and beyond` indefinitely
+-	Displays `I hate the kill command` when receiving a SIGTERM signal
+-	Displays `Y U no love me?!` when receiving a SIGINT signal
+-	Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a SIGQUIT or SIGTERM signal
+
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/d8ecfe9109334898b9540ffd20cf64d1c06f0c09.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T125317Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ba5bb3e380cf847d6b5ae905c1e7d53db8fd96334205dcca4905e606583bbd6e)
+
+
+```
+sylvain@ubuntu$ sudo ./100-process_and_pid_file
+To infinity and beyond
+To infinity and beyond
+^CY U no love me?!
+
+```
+
+Executing the `100-process_and_pid_file` script and killing it with `ctrl+c`.
+
+Terminal #0
+
+```
+sylvain@ubuntu$ sudo ./100-process_and_pid_file
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+I hate the kill command
+sylvain@ubuntu$
+
+```
+
+Terminal #1
+
+```
+sylvain@ubuntu$ sudo pkill -f 100-process_and_pid_file
+sylvain@ubuntu$
+
+```
+
+Starting `100-process_and_pid_file` in the terminal #0 and then killing it in the terminal #1.
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x05-processes_and_signals`
+-   File: `100-process_and_pid_file`
+
+
+### 10\. Manage my process
+
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/37975393ead381f4d27f268f7337c6d3013b4991.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T125317Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=188c972aa4b1250e1fc434075f2123a5138b455d706759000c170146660f3089)
+
+
+Read:
+
+-	[&](https://intranet.alxswe.com/rltoken/R4YSgPT1k0PhWCrB0TYzoQ "&")
+-	[init.d](https://intranet.alxswe.com/rltoken/sVqN4oNYYO6ojS4ctT02Jw "init.d")
+-	[Daemon](https://intranet.alxswe.com/rltoken/kCoQ5aYO3towdDQFVPcfNg "Daemon")
+-	[Positional parameters](https://intranet.alxswe.com/rltoken/TJ2rxUwRsnM1mJQHSCnOQA "Positional parameters")
+
+man: `sudo`
+
+Programs that are detached from the terminal and running in the background are called daemons or processes, need to be managed. The general minimum set of instructions is: `start`, `restart` and `stop`. The most popular way of doing so on Unix system is to use the init scripts.
+
+Write a `manage_my_process` Bash script that:
+
+Indefinitely writes `I am alive!` to the file `/tmp/my_process`
+In between every `I am alive!` message, the program should pause for 2 seconds
+Write Bash (init) script `101-manage_my_process` that manages `manage_my_process`. (both files need to be pushed to git)
+
+Requirements:
+
+-	When passing the argument `start`:
+	-	Starts `manage_my_process`
+	-	Creates a file containing its PID in `/var/run/my_process.pid`
+	-	Displays `manage_my_process started`
+-	When passing the argument stop:
+	-	Stops `manage_my_process`
+	-	Deletes the file `/var/run/my_process.pid`
+	-	Displays `manage_my_process stopped`
+-	When passing the argument `restart`
+	-	Stops `manage_my_process`
+	-	Deletes the file `/var/run/my_process.pid`
+	-	Starts `manage_my_process`
+	-	Creates a file containing its PID in `/var/run/my_process.pid`
+	-	Displays `manage_my_process restarted`
+-	Displays `Usage: manage_my_process {start|stop|restart}` if any other argument or no argument is passed
+
+Note that this init script is far from being perfect (but good enough for the sake of manipulating process and PID file), for example we do not handle the case where we check if a process is already running when doing `./101-manage_my_process start`, in our case it will simply create a new process instead of saying that it is already started.
+
+
+```
+sylvain@ubuntu$ sudo ./101-manage_my_process
+Usage: manage_my_process {start|stop|restart}
+sylvain@ubuntu$ sudo ./101-manage_my_process start
+manage_my_process started
+sylvain@ubuntu$ tail -f -n0 /tmp/my_process
+I am alive!
+I am alive!
+I am alive!
+I am alive!
+^C
+sylvain@ubuntu$ sudo ./101-manage_my_process stop
+manage_my_process stopped
+sylvain@ubuntu$ cat /var/run/my_process.pid
+cat: /var/run/my_process.pid: No such file or directory
+sylvain@ubuntu$ tail -f -n0 /tmp/my_process
+^C
+sylvain@ubuntu$ sudo ./101-manage_my_process start
+manage_my_process started
+sylvain@ubuntu$ cat /var/run/my_process.pid
+11864
+sylvain@ubuntu$ sudo ./101-manage_my_process restart
+manage_my_process restarted
+sylvain@ubuntu$ cat /var/run/my_process.pid
+11918
+sylvain@ubuntu$ tail -f -n0 /tmp/my_process
+I am alive!
+I am alive!
+I am alive!
+^C
+sylvain@ubuntu$
+
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x05-processes_and_signals`
+-   File: `101-manage_my_process, manage_my_process`
+
+
+### 11\. Zombie
+
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/255/C6mO7b3.jpg)
+
+Read [what a zombie process is](https://intranet.alxswe.com/rltoken/Tb86ZoSxR6ORCKYlZaYzHw "what a zombie process is").
+
+Write a C program that creates 5 zombie processes.
+
+Requirements:
+
+-	For every zombie process created, it displays `Zombie process created, PID: ZOMBIE_PID`
+-	Your code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+-	When your code is done creating the parent process and the zombies, use the function bellow
+
+```
+int infinite_while(void)
+{
+    while (1)
+    {
+        sleep(1);
+    }
+    return (0);
+}
+
+```
+
+Example:
+
+Terminal #0
+
+```
+sylvain@ubuntu$ gcc 102-zombie.c -o zombie
+sylvain@ubuntu$ ./zombie
+Zombie process created, PID: 13527
+Zombie process created, PID: 13528
+Zombie process created, PID: 13529
+Zombie process created, PID: 13530
+Zombie process created, PID: 13531
+^C
+sylvain@ubuntu$
+
+```
+
+Terminal #1
+
+```
+sylvain@ubuntu$ ps aux | grep -e 'Z+.*<defunct>'
+sylvain  13527  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+sylvain  13528  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+sylvain  13529  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+sylvain  13530  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+sylvain  13531  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+sylvain  13533  0.0  0.1  10460   964 pts/2    S+   01:19   0:00 grep --color=auto -e Z+.*<defunct>
+sylvain@ubuntu$
+
+```
+
+In Terminal #0, I start by compiling `102-zombie.c` and executing `zombie` which creates 5 zombie processes. In Terminal #1, I display the list of processes and look for lines containing `Z+.*<defunct>` which catches zombie process.
+
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x05-processes_and_signals`
+-   File: `102-zombie.c`
