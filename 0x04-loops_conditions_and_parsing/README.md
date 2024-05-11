@@ -728,7 +728,7 @@ sylvain@ubuntu$
 -------------------------------------------------------
 ### 12\. Tell the story of passwd
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/03ca27392c6338e696fc0c3b08765f02c98457a1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T141153Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7add3ec05c3ba88e0d9458c88f38d73e1d8e79c5d49b952329d68ea64399fa50)
+![](![alt text](image.png))
 
 
 Read:
