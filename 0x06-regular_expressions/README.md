@@ -67,7 +67,7 @@ Tasks
 
 ### 0\. Simply matching School
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240511T111936Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=aae72f3d167909dfdc8787bb2c58a53f9a6e096866d61cc811121923a18f36c1)
+![](https://postimages.org/)
 
 Requirements:
 
