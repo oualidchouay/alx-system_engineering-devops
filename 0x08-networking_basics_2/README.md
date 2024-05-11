@@ -1,11 +1,10 @@
 0x08. Networking basics #1
 ==========================
 
--   By Sylvain Kalache
--   Weight: 1
 
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/285/s7kpNYq.png)
+
 
 Resources
 ---------
@@ -17,6 +16,7 @@ Resources
 -   [What is the hosts file](https://alx-intranet.hbtn.io/rltoken/4_MBpFTulKliFM69jCPzOQ "What is the hosts file")
 -   [Netcat examples](https://alx-intranet.hbtn.io/rltoken/OR0lOEwAw9I1Rj4aGp1Ljg "Netcat examples")
 
+
 **man or help**:
 
 -   `ifconfig`
@@ -24,10 +24,12 @@ Resources
 -   `nc`
 -   `cut`
 
+
 Learning Objectives
 -------------------
 
 At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/IpTKeVwlKHT4ZVva_T891w "explain to anyone"), **without the help of Google**:
+
 
 ### General
 
@@ -35,6 +37,7 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   What is 0.0.0.0
 -   What is `/etc/hosts`
 -   How to display your machine's active network interfaces
+
 
 Requirements
 ------------
@@ -50,19 +53,15 @@ Requirements
 -   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 -   The second line of all your Bash scripts should be a comment explaining what is the script doing
 
-Quiz questions
---------------
-
-Show
 
 Tasks
 -----
 
+
+**Mandatory**
+
+-------------------------------------------------------
 ### 0\. Change your home IP
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a Bash script that configures an Ubuntu server with the below requirements.
 
@@ -124,14 +123,13 @@ If you're running this script on a machine that you'll continue to use, be sure 
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x08-networking_basics_2`
 -   File: `0-change_your_home_IP`
+-------------------------------------------------------
 
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
+
+
+-------------------------------------------------------
 ### 1\. Show attached IPs
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a Bash script that displays all active IPv4 IPs on the machine it's executed on.
 
@@ -154,14 +152,15 @@ Note that we can see our `localhost` IP :)
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x08-networking_basics_2`
 -   File: `1-show_attached_IPs`
+-------------------------------------------------------
 
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
+
+**Advanced**
+
+
+-------------------------------------------------------
 ### 2\. Port listening on localhost
-
-#advanced
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a Bash script that listens on port `98` on `localhost`.
 
@@ -208,4 +207,4 @@ As you can see, this can come in very handy in a multitude of situations. Maybe 
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x08-networking_basics_2`
 -   File: `100-port_listening_on_localhost`
-
+-------------------------------------------------------
