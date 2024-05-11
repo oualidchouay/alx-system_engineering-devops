@@ -119,3 +119,5 @@ Tasks
   </li>
 </ul>
 </details>
+
+You can find a [log file here](http://intranet-projects-files.s3.amazonaws.com/holbertonschool-sysadmin_devops/78/text_messages.log "log file here")
