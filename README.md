@@ -21,6 +21,6 @@
 *	[0x08. Networking basics #1](./0x08-networking_basics_2/)
 
 
-### Author:
+## Author
 
-https://github.com/oualidchouay
+- [oualidchouay](https://github.com/oualidchouay)
